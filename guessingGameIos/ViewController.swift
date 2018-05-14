@@ -43,7 +43,7 @@ rule 3. You will be given hints
     }
     func startOver() {
         randomNumber = Int(arc4random_uniform(100))
-        tries = tries - 5
+        tries = tries - 4
         userFeedbackLabel.text =  """
         your game has restarted,
         you can guess again
@@ -77,6 +77,7 @@ rule 3. You will be given hints
             you ran out of tries,
             do you wanna play again?
             yes or no
+            the correct number \(randomNumber)
             """
             yesButtonOutlet.isHidden = false
             noButtonOutlet.isHidden = false
